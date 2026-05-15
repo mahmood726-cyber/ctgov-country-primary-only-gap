@@ -1,0 +1,96 @@
+{
+  "title": "CT.gov Country Primary-Only Gap",
+  "slug": "ctgov-country-primary-only-gap",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-29",
+  "body": "Which country-linked CT.gov portfolios most often leave older study pages without the primary outcome description while keeping the broader detailed-description field? We analysed 249,507 eligible older closed interventional studies from the March 29, 2026 full-registry snapshot and exploded country links. We defined a primary-only gap as missing primary outcome description with detailed description still present, then ranked country-linked portfolios with at least 500 linked studies. The United States led the country-linked primary-only-gap stock table at 13,662 studies, followed by Canada at 2,381, France at 2,233, and Germany at 1,629. Iran had the highest large-country primary-only-gap rate at 18.4 percent, while India reached 15.1 percent and Canada 13.8 percent. Country-linked primary-only gaps show where the endpoint sentence disappears even though the broader study narrative remains visible in older registry records. Country-linked rows are non-exclusive because multinational studies can contribute to more than one national portfolio in registry link tables. They reflect registry link geography rather than jurisdiction.",
+  "word_count": 156,
+  "sentence_count": 8,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Which country-linked CT.gov portfolios most often leave older study pages without the primary outcome description while keeping the broader detailed-description field?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We analysed 249,507 eligible older closed interventional studies from the March 29, 2026 full-registry snapshot and exploded country links."
+    },
+    {
+      "role": "Method",
+      "text": "We defined a primary-only gap as missing primary outcome description with detailed description still present, then ranked country-linked portfolios with at least 500 linked studies."
+    },
+    {
+      "role": "Primary result",
+      "text": "The United States led the country-linked primary-only-gap stock table at 13,662 studies, followed by Canada at 2,381, France at 2,233, and Germany at 1,629."
+    },
+    {
+      "role": "Secondary result",
+      "text": "Iran had the highest large-country primary-only-gap rate at 18.4 percent, while India reached 15.1 percent and Canada 13.8 percent."
+    },
+    {
+      "role": "Interpretation",
+      "text": "Country-linked primary-only gaps show where the endpoint sentence disappears even though the broader study narrative remains visible in older registry records."
+    },
+    {
+      "role": "Boundary",
+      "text": "Country-linked rows are non-exclusive because multinational studies can contribute to more than one national portfolio in registry link tables. They reflect registry link geography rather than jurisdiction."
+    }
+  ],
+  "notes": {
+    "app": "CT.gov Country Primary-Only Gap dashboard",
+    "data": "249,507 eligible older closed interventional studies with primary-only-gap stock and rate summaries",
+    "code": "https://github.com/mahmood726-cyber/ctgov-country-primary-only-gap",
+    "doi": "",
+    "version": "1.0.0",
+    "date": "2026-03-29",
+    "validation": "FULL REGISTRY RUN"
+  },
+  "type": "methods",
+  "primary_estimand": "Primary-only-gap stock among older studies missing the primary outcome description field while retaining the detailed description field",
+  "validation": {
+    "status": "fail",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": false,
+        "detail": "Found 8 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 156 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": true,
+        "detail": "Sentence 4 should include a quantitative result such as a percentage, count, or interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": true,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": false,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}
